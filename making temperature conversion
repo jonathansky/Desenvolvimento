@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+//Conversão de temperatura
+//this code is working with pointers making temperature conversion
+float converte(float *c)
+{
+	float *f;
+	*f =(float) 1.8**c+32;
+	return *f;	
+}
+
+int main()
+{
+	float t1;
+	float t2;
+	printf("Digite a temperatura Celsius: ");
+		scanf("%f", &t1);
+	t2 = converte(&t1);
+	printf("\n\nTemperatura em Fahrenheit: %f", t2);
+
+}
