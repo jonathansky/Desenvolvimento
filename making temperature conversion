@@ -16,6 +16,6 @@ int main()
 	printf("Digite a temperatura Celsius: ");
 		scanf("%f", &t1);
 	t2 = converte(&t1);
-	printf("\n\nTemperatura em Fahrenheit: %f", t2);
+	printf("\n\nTemperatura em Fahrenheit: %7.4f", t2);
 
 }
