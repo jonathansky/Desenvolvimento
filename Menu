@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include "C:\Users\Jonathan\Documents\Desenvolvimento\Programação\Estrutura De Dados em C\OperacoesMatematicas.cpp"
+
+//Fatorial
+
+int main(){
+	int valor, valor2, resultado, opcao;
+	
+	printf("::MENU::");
+	printf("\n1-fatoracao\n2-arranjo");
+	printf("\n\nopcao:" );
+	scanf("%d", &opcao);
+	
+	switch(opcao){
+		
+	case 1:
+			printf("Digite o valor que deseja ser fatorado: ");
+			scanf("%d", &valor);
+			
+			resultado = fat(valor);
+	break;
+	
+	case 2:
+			printf("Digite o valor I :");
+			scanf("%d", &valor);
+			
+			printf("\nDigite o valor II:");
+			scanf("%d", &valor2);
+			
+			resultado = arranjo(valor, valor2);
+	break;
+	}
+	system("cls");
+	printf("\n\n\n Valor da fatoracao: %d", resultado);	
+}
