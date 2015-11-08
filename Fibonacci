@@ -1,0 +1,28 @@
+#include "stdio.h"
+#include<stdlib.h>
+int main()	
+{
+  int a, b, auxiliar, i, n;
+ 
+  a = 0;
+  b = 1;
+ 
+ 
+  printf("Digite o valor: ");
+  // A função scanf obtém um valor digitado.
+  scanf("%d", &n);
+  
+  printf("\nSérie de Fibonacci:\n");
+  printf("%d\n", b);
+ 
+  // Com a estrutura de controle for() gero a sequência.
+  for(i = 0; auxiliar < n; i++)
+  {
+    auxiliar = a + b;
+    a = b;
+    b = auxiliar;
+ 
+    // Imprimo o número na tela.
+    printf("%d\n", auxiliar);
+  }
+}
